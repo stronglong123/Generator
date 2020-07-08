@@ -1,0 +1,14 @@
+db:
+  url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&serverTimezone=UTC&useSSL=false
+  username: root
+  password: root
+author: xialei
+packageName: com.test.springboot
+path:
+  controller: controller
+  service: service.impl
+  interf: service
+  dao: dao
+  entity: domain
+  mapper: dao
+  bl: bl
