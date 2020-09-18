@@ -5,11 +5,11 @@ db:
 author: xialei
 packageName: com.test.springboot
 path:
-  controller: controller
-  service: service.impl
-  interf: service
-  dao: dao
-  entity: domain
-  mapper: dao
-  bl: bl
+#  controller: controller
+#  service: service.impl
+#  interf: service
+#  dao: dao
+#  entity: domain
+#  mapper: dao
+#  bl: bl
   test: test

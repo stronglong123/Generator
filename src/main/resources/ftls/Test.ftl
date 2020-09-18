@@ -1,6 +1,6 @@
 package ${BasePackageName}${ServicePackageName};
 
-import ${BasePackageName}${BlPackageName}.${ClassName}BL;
+import ${BasePackageName}${BlPackageName}.${ClassName}ServiceImpl;
 import ${BasePackageName}${EntityPackageName}.${ClassName};
 ${InterfaceImport}
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +17,9 @@ import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class ${ClassName}Service${Impl}Test {
+public class ${ClassName}ServiceImplTest {
     @Autowired
-    private ${ClassName}Service${Impl} ${EntityName}Service;
+    private ${ClassName}ServiceImpl ${EntityName}Service;
 
     ${Override}
     @Test
