@@ -12,3 +12,4 @@ path:
   entity: domain
   mapper: dao
   bl: bl
+  test: test

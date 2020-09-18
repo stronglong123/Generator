@@ -65,6 +65,8 @@ public class FileUtil {
                 return FreemarketConfigUtils.getInstance().getTemplate("Interface.ftl");
             case FreemarketConfigUtils.TYPE_BL:
                 return FreemarketConfigUtils.getInstance().getTemplate("bl.ftl");
+            case FreemarketConfigUtils.TYPE_TEST:
+                return FreemarketConfigUtils.getInstance().getTemplate("Test.ftl");
             default:
                 return null;
         }

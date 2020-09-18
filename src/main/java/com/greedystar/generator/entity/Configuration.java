@@ -91,6 +91,8 @@ public class Configuration implements Serializable {
         private String entity;
         private String mapper;
         private String bl;
+        private String test;
+
 
         public Path() {
         }
@@ -158,6 +160,14 @@ public class Configuration implements Serializable {
 
         public void setBl(String bl) {
             this.bl = bl;
+        }
+
+        public String getTest() {
+            return test;
+        }
+
+        public void setTest(String test) {
+            this.test = test;
         }
     }
 

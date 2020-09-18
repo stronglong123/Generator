@@ -4,6 +4,7 @@ import com.greedystar.generator.invoker.Many2ManyInvoker;
 import com.greedystar.generator.invoker.One2ManyInvoker;
 import com.greedystar.generator.invoker.SingleInvoker;
 import com.greedystar.generator.invoker.base.Invoker;
+import gui.ava.html.image.generator.HtmlImageGenerator;
 
 import java.util.Arrays;
 import java.util.List;
@@ -56,8 +57,8 @@ public class Main {
 
     public static void single() {
         Invoker invoker = new SingleInvoker.Builder()
-                .setTableName("deviceinfo")
-                .setClassName("DeviceInfo")
+                .setTableName("bomstrategy")
+                .setClassName("BomStrategy")
                 .build();
         invoker.execute();
     }

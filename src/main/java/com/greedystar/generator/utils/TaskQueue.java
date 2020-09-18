@@ -31,6 +31,9 @@ public class TaskQueue {
         if (!StringUtil.isBlank(ConfigUtil.getConfiguration().getPath().getBl())) {
             taskQueue.add(new BlTask(className));
         }
+        if (!StringUtil.isBlank(ConfigUtil.getConfiguration().getPath().getTest())) {
+            taskQueue.add(new TestTask(className));
+        }
     }
 
     public void initSingleTasks(String className, String tableName, List<ColumnInfo> tableInfos) {
