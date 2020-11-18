@@ -1,6 +1,7 @@
 package ${BasePackageName}${InterfacePackageName};
 
 import ${BasePackageName}${EntityPackageName}.${ClassName};
+import com.yijiupi.himalaya.base.search.PageList;
 
 import java.util.List;
 
@@ -10,9 +11,9 @@ import java.util.List;
  */
 public interface ${IClassName}Service {
 
-     ${ClassName} detail(String id);
+     ${ClassName} detail(Long id);
 
-     List<${ClassName}> list(${ClassName} ${EntityName});
+     PageList<${ClassName}> pageList(${ClassName} ${EntityName});
 
      void insert(${ClassName} ${EntityName});
 

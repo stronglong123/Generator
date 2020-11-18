@@ -2,6 +2,7 @@ package ${BasePackageName}${DaoPackageName};
 
 import ${BasePackageName}${EntityPackageName}.${ClassName};
 import org.apache.ibatis.annotations.Mapper;
+import com.yijiupi.himalaya.ibatis.type.PageResult;
 
 import java.util.List;
 
@@ -11,9 +12,9 @@ import java.util.List;
  */
 public interface ${ClassName}Mapper {
 
-     ${ClassName} detail(String id);
+     ${ClassName} detail(Long id);
 
-     List<${ClassName}> list(${ClassName} ${EntityName});
+     PageResult<${ClassName}> pageList(${ClassName} ${EntityName});
 
      int insert(${ClassName} ${EntityName});
 

@@ -25,7 +25,7 @@
         </where>
     </select>
 
-    <select id="list" resultMap="${EntityName}ResultMap">
+    <select id="pageList" resultMap="${EntityName}ResultMap">
         SELECT
         <include refid="${EntityName}Columns" />
         FROM ${TableName} <include refid="${EntityName}Joins" />
@@ -62,9 +62,9 @@
         WHERE ${PrimaryKey} = ${WhereId}
     </update>
 
-    <update id="delete">
+    <delete id="delete">
         DELETE FROM ${TableName}
         WHERE ${PrimaryKey} = ${WhereId}
-    </update>
+    </delete>
 
 </mapper>

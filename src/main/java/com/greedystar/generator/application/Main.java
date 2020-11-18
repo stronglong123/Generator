@@ -57,8 +57,8 @@ public class Main {
 
     public static void single() {
         Invoker invoker = new SingleInvoker.Builder()
-                .setTableName("bomstrategy")
-                .setClassName("BomStrategy")
+                .setTableName("adminuser")
+                .setClassName("AdminUser")
                 .build();
         invoker.execute();
     }

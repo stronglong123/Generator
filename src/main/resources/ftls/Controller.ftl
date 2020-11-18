@@ -29,7 +29,7 @@ public class ${ClassName}Controller {
     }
 
     @GetMapping("/${EntityName}/detail")
-    public Object detail(@RequestParam String id) {
+    public Object detail(@RequestParam Long id) {
         ${ClassName} ${EntityName} = ${EntityName}Service.detail(id);
         return ${EntityName};
     }

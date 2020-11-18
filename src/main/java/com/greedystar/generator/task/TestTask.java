@@ -55,10 +55,10 @@ public class TestTask extends AbstractTask {
         testData.put("Date", new SimpleDateFormat("yyyy-MM-dd").format(new Date()));
         testData.put("ClassName", className);
         testData.put("EntityName", StringUtil.firstToLowerCase(className));
-        String filePath = FileUtil.getSourcePath() + StringUtil.package2Path(ConfigUtil.getConfiguration().getPackageName()) + StringUtil.package2Path(ConfigUtil.getConfiguration().getPath().getService());
+        String filePath = FileUtil.getSourcePath() + StringUtil.package2Path(ConfigUtil.getConfiguration().getPackageName()) + StringUtil.package2Path(ConfigUtil.getConfiguration().getPath().getTest());
         String fileName;
 
-        testData.put("Impl", "Impl implements " + "I" + className + "Service");
+        testData.put("Impl", "ImplService");
         testData.put("Override", "");
         testData.put("InterfaceImport", "");
 

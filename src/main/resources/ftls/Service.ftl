@@ -5,6 +5,7 @@ import ${BasePackageName}${EntityPackageName}.${ClassName};
 ${InterfaceImport}
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
+import com.yijiupi.himalaya.base.search.PageList;
 
 import java.util.List;
 
@@ -17,12 +18,12 @@ public class ${ClassName}Service${Impl} {
     @Autowired
     private ${ClassName}BL ${EntityName}Bl;
     ${Override}
-    public ${ClassName} detail(String id){
+    public ${ClassName} detail(Long id){
         return ${EntityName}Bl.detail(id);
     }
     ${Override}
-    public List<${ClassName}> list(${ClassName} ${EntityName}) {
-        return ${EntityName}Bl.list(${EntityName});
+    public PageList<${ClassName}> pageList(${ClassName} ${EntityName}) {
+        return ${EntityName}Bl.pageList(${EntityName});
     }
     ${Override}
     public void insert(${ClassName} ${EntityName}) {

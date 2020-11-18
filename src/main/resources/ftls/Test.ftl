@@ -5,11 +5,12 @@ import ${BasePackageName}${EntityPackageName}.${ClassName};
 ${InterfaceImport}
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import java.util.ArrayList;
 import java.util.List;
-
+import com.alibaba.fastjson.JSON;
 /**
  * @author ${Author}
  * @date  ${Date}
@@ -23,20 +24,21 @@ public class ${ClassName}ServiceImplTest {
 
     ${Override}
     @Test
-    public ${ClassName} detail(){
-        String id
-        return ${EntityName}Service.detail(id);
+    public void detail(){
+        ${EntityName}Service.detail(id);
+        System.out.println(JSON.toJSONString(""));
     }
     ${Override}
     @Test
-    public List<${ClassName}> list() {
-        ${ClassName} ${EntityName}
-        return ${EntityName}Service.list(${EntityName});
+    public void pageList() {
+        ${ClassName} ${EntityName} = new ${ClassName}();
+        ${EntityName}Service.pageList(${EntityName});
+        System.out.println(JSON.toJSONString(""));
     }
     ${Override}
     @Test
     public void insert() {
-        ${ClassName} ${EntityName}
+        ${ClassName} ${EntityName} = new ${ClassName}();
         ${EntityName}Service.insert(${EntityName});
     }
     ${Override}
@@ -48,13 +50,13 @@ public class ${ClassName}ServiceImplTest {
     ${Override}
     @Test
     public void update() {
-        ${ClassName} ${EntityName}
+        ${ClassName} ${EntityName} = new ${ClassName}();
         ${EntityName}Service.update(${EntityName});
     }
     ${Override}
     @Test
     public void delete() {
-        ${ClassName} ${EntityName}
+        ${ClassName} ${EntityName} = new ${ClassName}();
         ${EntityName}Service.delete(${EntityName});
     }
 

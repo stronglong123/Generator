@@ -6,7 +6,8 @@ ${InterfaceImport}
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+import com.yijiupi.himalaya.base.search.PageList;
+import com.yijiupi.himalaya.ibatis.type.PageResult;
 import java.util.List;
 
 /**
@@ -18,12 +19,13 @@ public class ${ClassName}BL {
     @Autowired
     private ${ClassName}Mapper ${EntityName}Mapper;
     ${Override}
-    public ${ClassName} detail(String id){
+    public ${ClassName} detail(Long id){
         return ${EntityName}Mapper.detail(id);
     }
     ${Override}
-    public List<${ClassName}> list(${ClassName} ${EntityName}) {
-        return ${EntityName}Mapper.list(${EntityName});
+    public PageList<${ClassName}> pageList(${ClassName} ${EntityName}) {
+         PageResult<${ClassName}> pageResult = ${EntityName}Mapper.pageList(${EntityName});
+         return pageResult.toPageList();
     }
     ${Override}
     @Transactional
