@@ -33,6 +33,14 @@
         </where>
     </select>
 
+    <select id="list" resultMap="${EntityName}ResultMap">
+        SELECT
+        <include refid="${EntityName}Columns" />
+        FROM ${TableName} <include refid="${EntityName}Joins" />
+        <where>
+        </where>
+    </select>
+
     <insert id="insert">
         INSERT INTO ${TableName}(
             ${InsertProperties}

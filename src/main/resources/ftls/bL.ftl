@@ -28,6 +28,11 @@ public class ${ClassName}BL {
          return pageResult.toPageList();
     }
     ${Override}
+    public List<${ClassName}> list(${ClassName} ${EntityName}) {
+        List<${ClassName}> list = ${EntityName}Mapper.list(${EntityName});
+        return list;
+    }
+    ${Override}
     @Transactional
     public void insert(${ClassName} ${EntityName}) {
         ${EntityName}Mapper.insert(${EntityName});

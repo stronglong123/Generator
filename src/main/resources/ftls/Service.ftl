@@ -25,6 +25,12 @@ public class ${ClassName}Service${Impl} {
     public PageList<${ClassName}> pageList(${ClassName} ${EntityName}) {
         return ${EntityName}Bl.pageList(${EntityName});
     }
+
+    ${Override}
+    public List<${ClassName}> list(${ClassName} ${EntityName}) {
+        return ${EntityName}Bl.list(${EntityName});
+    }
+
     ${Override}
     public void insert(${ClassName} ${EntityName}) {
         ${EntityName}Bl.insert(${EntityName});

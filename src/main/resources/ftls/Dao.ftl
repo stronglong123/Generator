@@ -16,6 +16,8 @@ public interface ${ClassName}Mapper {
 
      PageResult<${ClassName}> pageList(${ClassName} ${EntityName});
 
+     List<${ClassName}> list(${ClassName} ${EntityName});
+
      int insert(${ClassName} ${EntityName});
 
      int insertBatch(List<${ClassName}> ${EntityName}s);

@@ -15,6 +15,9 @@ public interface ${IClassName}Service {
 
      PageList<${ClassName}> pageList(${ClassName} ${EntityName});
 
+     List<${ClassName}> list(${ClassName} ${EntityName});
+
+
      void insert(${ClassName} ${EntityName});
 
      void insertBatch(List<${ClassName}> ${EntityName}s);
